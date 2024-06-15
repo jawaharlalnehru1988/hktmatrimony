@@ -1,0 +1,6 @@
+.login_image img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+    min-height: 250px;
+}
