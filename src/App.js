@@ -1,15 +1,26 @@
+import { useEffect } from 'react';
 import './App.css';
-import Navbar from './components/Navbar/nav-bar';
-import HomePage from './pages/Home';
-import Loginpage from './login-pages/login'
+import axios from 'axios';
+import Sidebar from './components/Navbar/side-bar';
+
 
 
 function App() {
+  useEffect(() => {
+    axios.get('https://jsonplaceholder.typicode.com/users')
+      .then(response => {
+      console.log('response :', response);
+
+      })
+      .catch(error => {
+     
+      });
+  }, []);
+
+
   return (
     <div className="App">
-       <Navbar />
-       <HomePage />
-       <Loginpage />
+          <Sidebar/>
       
     </div>
   );
