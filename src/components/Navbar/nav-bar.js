@@ -1,35 +1,19 @@
-import './nav-bar.css';
+// import './nav-bar.css';
+// import AppBar from '@material-ui/core/AppBar';
+// import Toolbar from '@material-ui/core/Toolbar';
 
-function Navbar() {
-    return (
-      <div className="header-class">
-      <div className='container'>
-        <div className='row pt-3 pb-3'>
-
-      <div className='col-lg-2'>
-        <div className="logo">
-          <a href="javascriptvoid(0);">
-            <span>HKT</span>MATRIMONY
-           </a>
-        </div>
-      </div>
-      <div className='col-lg-6'>
-         
-
-      </div>
-      <div className='col-lg-2'>
-         <button className="top-space"><a href='#'>Log in</a></button>
-
-      </div>
-      <div className='col-lg-2 '>
-        <p className="contact-wrapper top-space"><a href='#'>Contact</a></p>
-        </div>
-        </div>
+// function Navbar() {
+//     return (
+//       <div className="header-class">
+//   <AppBar position="fixed">
+//       <Toolbar>
+       
+//         <div>Navbar Content</div>
+//       </Toolbar>
+//     </AppBar>
+//       </div>
       
-      </div>
-      </div>
-      
-        )
-    }
+//         )
+//     }
 
-    export default Navbar;
+//     export default Navbar;
