@@ -8,12 +8,22 @@
 font-size: 18px;
 font-weight: 900;
 }
-.top-space{
-    margin-top: 20px;
+.nav-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar-links li{
+    display: inline-block;
+    padding-right: 25px ;
+}
+.navbar-links a {
+    text-decoration: none;
 }
 
-
-
+.navbar-links li{
+    list-style: none;
+}
 .logo a span {
     display: inline-block;
     font-size: 35px;
