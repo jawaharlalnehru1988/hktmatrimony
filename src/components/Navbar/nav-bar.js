@@ -13,17 +13,17 @@ function Navbar() {
            </a>
         </div>
       </div>
-      <div className='col-lg-6'>
-         
+      <div className='col-lg-10'>
+        <div className="nav-wrap">
 
+      <ul className="navbar-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><button className="link-button" onClick={() => alert('Logo clicked!')}>Logo</button></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
       </div>
-      <div className='col-lg-2'>
-         <button className="top-space"><a href='#'>Log in</a></button>
-
       </div>
-      <div className='col-lg-2 '>
-        <p className="contact-wrapper top-space"><a href='#'>Contact</a></p>
-        </div>
         </div>
       
       </div>
