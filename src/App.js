@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
 import Sidebar from './components/Navbar/side-bar';
+import Base from './Modules/Base';
 
 
 
@@ -20,8 +21,8 @@ function App() {
 
   return (
     <div className="App">
-          <Sidebar/>
-      
+          {/* <Sidebar/> */}
+      <Base />
     </div>
   );
 }
