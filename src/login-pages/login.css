@@ -4,3 +4,19 @@
     object-fit: contain;
     min-height: 250px;
 }
+
+form {
+    width: 58%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+
+
+
+@media screen and (max-width : 600px) {
+    form {
+        width: 80%;
+    }
+}

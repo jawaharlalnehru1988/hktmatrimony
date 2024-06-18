@@ -10,7 +10,8 @@ function App() {
        <Navbar />
        <HomePage />
        <Loginpage />
-      
+       
+ 
     </div>
   );
 }
