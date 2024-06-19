@@ -2,7 +2,7 @@ import './login.css';
 import myImage from '../login-pages/image/banner.jpg';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-
+import React, { Component } from 'react'
 
 
 function login() {
@@ -12,14 +12,56 @@ function login() {
         <div className='row'>
         
       <div className='col-lg-6 col-12 mt-3 pb-3 login_image' >
-       <img src={myImage} alt="marriage" />
+       {/* <img src={myImage} alt="marriage" /> */}
+       <div className="signup_wrap mt-3">
+    <form>
+        <h3>Sign Up</h3>
+        <div className="mb-3  mt-4 ">
+          <label>First name</label>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="First name"
+          />
+        </div>
+        <div className="mb-3">
+          <label>Last name</label>
+          <input type="text" className="form-control" placeholder="Last name" />
+        </div>
+        <div className="mb-3">
+          <label>Email address</label>
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter email"
+          />
+        </div>
+        <div className="mb-3">
+          <label>Password</label>
+          <input
+            type="password"
+            className="form-control"
+            placeholder="Enter password"
+          />
+        </div>
+        <div className="d-grid">
+          <button type="submit" className="btn btn-primary">
+            Sign Up
+          </button>
+        </div>
+        <p className="forgot-password text-right">
+          Already registered <a href="/sign-in">sign in?</a>
+        </p>
+      </form>
+      </div>
+
       
      </div>
      <div className='col-lg-6 col-12 mt-3 pb-3 login-section' >
       <div className="login-wrapper">
         <h2> Log In </h2>
         <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3 mt-4" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
        
@@ -36,9 +78,6 @@ function login() {
         Submit
       </Button>
     </Form>
-
-  
-
       </div>
       
      </div>
