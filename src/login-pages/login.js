@@ -1,8 +1,8 @@
 import './login.css';
-import myImage from '../login-pages/image/banner.jpg';
+// import myImage from '../login-pages/image/banner.jpg';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import React, { Component } from 'react'
+
 
 
 function login() {
@@ -15,7 +15,7 @@ function login() {
        {/* <img src={myImage} alt="marriage" /> */}
        <div className="signup_wrap mt-3">
     <form>
-        <h3>Sign Up</h3>
+        <h3>Register Now</h3>
         <div className="mb-3  mt-4 ">
           <label>First name</label>
           <input
@@ -44,8 +44,8 @@ function login() {
             placeholder="Enter password"
           />
         </div>
-        <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+        <div className="d-grid" >
+          <button type="submit" className="signup">
             Sign Up
           </button>
         </div>
@@ -59,7 +59,7 @@ function login() {
      </div>
      <div className='col-lg-6 col-12 mt-3 pb-3 login-section' >
       <div className="login-wrapper">
-        <h2> Log In </h2>
+        <h3> Log In </h3>
         <Form>
       <Form.Group className="mb-3 mt-4" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
@@ -74,7 +74,7 @@ function login() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
-      <Button variant="primary" type="submit">
+      <Button  className='signup' type="submit">
         Submit
       </Button>
     </Form>

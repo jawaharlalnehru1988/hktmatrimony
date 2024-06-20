@@ -4,7 +4,26 @@
     object-fit: contain;
     min-height: 250px;
 }
+.login_section{
 
+    color: #C80A11;
+    
+}
+button.signup{
+    background-color: transparent;
+    border-color: #C80A11;
+    border-radius: 5px;
+    width: 60%;
+    padding: 5px 0px;
+    color: #C80A11;
+}
+button.signup:hover{
+    border-color: #ee864a;
+    color: #ee864a;
+}
+.login_section label{
+    font-weight: 600;
+}
 form {
     width: 58%;
     margin: 0 auto;

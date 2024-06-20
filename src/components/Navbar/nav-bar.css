@@ -1,5 +1,5 @@
 .header-class{
-background-color: #ffba60;
+background-color: #ee864a;
 }
 .header-class a, button.link-button{
     text-decoration:none;
@@ -35,7 +35,9 @@ font-weight: 900;
 ul.navbar-links button.link-button {
     border-radius: 5px;
     width: 100%;
+    padding: 5px 10px;
     border-color: #770737;
+    background-color: #ee864a;
 }
 
 ul.navbar-links button.link-button:hover {
