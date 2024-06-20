@@ -1,4 +1,6 @@
-
+.header-class{
+background-color: #ffba60;
+}
 .header-class a, button.link-button{
     text-decoration:none;
     color: #770737;
@@ -54,10 +56,6 @@ button.top-space {
    
 }
 
-.header-class{
- background-color: #F2F3F4;
-
-}
 
 
 
