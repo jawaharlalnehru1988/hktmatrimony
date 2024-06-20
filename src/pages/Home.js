@@ -7,7 +7,7 @@ function Home() {
       <div className='container' >
         <div className='row'>
         
-      <div className='col-lg-12 col-12 mt-3  banner_wrapper' >
+      <div className='col-lg-12 col-12 mt-4  banner_wrapper' >
      <h2>Discover True Love on <span>HKT</span> MATRIMONY <br /> Your Journey to Happily Ever After Begins Here </h2>
       <p>Now find matches based on your Exclusively Vegetarian, hobbies & interests</p>
      </div>
