@@ -77,7 +77,7 @@ function login() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
-      <Button  className='signup' type="submit">
+      <Button  className='signup submit-btn' type="submit">
         Submit
       </Button>
     </Form>

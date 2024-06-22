@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar/nav-bar';
 import HomePage from './pages/Home';
+import Slider from './components/slider/slider-sec';
 import Loginpage from './login-pages/login'
 
 
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
        <Navbar />
        <HomePage />
+       <Slider />
        <Loginpage />
      
  

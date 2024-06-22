@@ -1,0 +1,13 @@
+.slider-wrap img{
+    width: 360px;
+    object-fit: contain;
+}
+
+
+
+@media screen and (max-width : 600px) {
+    .slider-wrap img{
+        width: 480px;
+        object-fit: contain;
+    }
+    }
