@@ -37,6 +37,42 @@ button.signup.submit-btn:hover, button.signup:hover  {
 }
 
 
+/* modefiy boostrap style  */
+
+ button.link-button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    border-color: #770737;
+    background-color: #ee864a;
+}
+
+.btn:hover{
+    border-color: #770737 !important;
+    color: #C80A11 !important;
+    background-color: transparent !important;
+}
+.sign_formtitle{
+    color: #C80A11 !important;
+    text-align: center !important;
+    width: 100%;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+}
+  
+  
+  
+
+
+
+ 
+
+
+  
+  
+  
+
+
+
 
 
 

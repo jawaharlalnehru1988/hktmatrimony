@@ -1,97 +1,70 @@
 import './login.css';
-// import myImage from '../login-pages/image/banner.jpg';
+import '../components/Navbar/nav-bar';
+
+
+
+import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
 
+function Popup() {
+  const [show, setShow] = useState(false);
 
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-function login() {
-    return (
-
-
-
-      <div className="login_section">
-      <div className='container' >
-        <div className='row'>
-        
-      <div className='col-lg-6 col-12 mt-3 pb-3 login_image' >
-       {/* <img src={myImage} alt="marriage" /> */}
-       <div className="signup_wrap mt-3">
-    <form>
-        <h3>Register Now</h3>
-        <div className="mb-3  mt-4 ">
-          <label>First name</label>
-          <input
-            type="text"
-            className="form-control"
-            placeholder="First name"
-          />
-        </div>
-        <div className="mb-3">
-          <label>Last name</label>
-          <input type="text" className="form-control" placeholder="Last name" />
-        </div>
-        <div className="mb-3">
-          <label>Email address</label>
-          <input
-            type="email"
-            className="form-control"
-            placeholder="Enter email"
-          />
-        </div>
-        <div className="mb-3">
-          <label>Password</label>
-          <input
-            type="password"
-            className="form-control"
-            placeholder="Enter password"
-          />
-        </div>
-        <div className="d-grid" >
-          <button type="submit" className="signup">
-            Sign Up
-          </button>
-        </div>
-        <p className="forgot-password text-right">
-          Already registered <a href="/sign-in">sign in?</a>
-        </p>
-      </form>
-      </div>
-
-      
-     </div>
-     <div className='col-lg-6 col-12 mt-3 pb-3 login-section' >
-      <div className="login-wrapper">
-        <h3> Log In </h3>
-        <Form>
-      <Form.Group className="mb-3 mt-4" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-       
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-      <Button  className='signup submit-btn' type="submit">
-        Submit
+  return (
+    <>
+      <Button className='link-button'  onClick={handleShow}>
+       Sign In 
       </Button>
-    </Form>
-      </div>
-      
-     </div>
-    
-        </div>
-      
-      </div>
-      </div>
-      
-        )
-    }
 
-    export default login;
+      <Modal className='sign_form' show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title className='sign_formtitle'>Sign In</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Email / Mobile Number</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="Email / Enter Your Number"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>Enter your OTP</Form.Label>
+              <Form.Control
+        type="password"
+        id="inputPassword5"
+        aria-describedby="passwordHelpBlock"
+      />
+            </Form.Group>
+      <Form.Group className="mb-3" id="formGridCheckbox">
+        <Form.Check type="checkbox" label="Remember me" />
+      </Form.Group> 
+
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <span>Don't have an account?<a href='#'>Register here</a></span>
+          <Button className="link-button" onClick={handleClose}>
+            Submit
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+
+export default Popup;
+
+
+
+
 

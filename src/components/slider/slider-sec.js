@@ -70,7 +70,6 @@ function AutoPlay() {
         <div className='slider-wrap'>
         <img src={sliderImageFive} alt="marriage" />
         </div>
-        
       </Slider>
     </div>
     </div>
