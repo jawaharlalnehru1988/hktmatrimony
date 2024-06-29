@@ -1,5 +1,6 @@
 import './login.css';
 import '../components/Navbar/nav-bar';
+import  './signup'
 
 
 
@@ -52,7 +53,7 @@ function Popup() {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <span>Don't have an account?<a href='#'>Register here</a></span>
+          <span>Don't have an account?<a href='<signup/>'>Register here</a></span>
           <Button className="link-button" onClick={handleClose}>
             Submit
           </Button>

@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './nav-bar.css';
 import myImage from './images/logo.png';
 import Signin from "../../login-pages/login";
 import SignUp from "../../login-pages/signup"
+import { FaBars } from "react-icons/fa";
 
 function NavBar() {
-    return (
+  const [isOpen, setISOpen] = useState(false);  
+  const toggleMenu = ()=> {
+    setISOpen(!isOpen);
+  } 
+  
+  return (
+      <>
       <div className="header-class">
       <div className='container'>
         <div className='row pt-3 pb-3'>
@@ -20,13 +27,16 @@ function NavBar() {
       <div className='col-lg-10 mt-2'>
         <div className="nav-wrap">
 
-      <ul className="navbar-links" >
+      <ul className={isOpen ?  "navbar-links.active" : "navbar-links" } >
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact Us</a></li>
         <li ><Signin /></li>
         <li><SignUp /></li>
       </ul>
+      <div className="icon" onClick={toggleMenu}>
+      <FaBars />
+      </div>
       </div>
       </div>
       </div>
@@ -34,6 +44,7 @@ function NavBar() {
       
       </div>
       
+      </>
         )
     }
 
