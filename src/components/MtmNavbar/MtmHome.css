@@ -59,6 +59,39 @@ button.top-space {
 }
 
 
+.banner_section {
+
+    font-family: monospace;
+}
+
+.banner_section span{
+    display: inline-block;
+    font-size: 35px;
+    color: #F1C40F;
+    text-shadow: .8px .8px #770737;
+    font-weight: 900;
+
+}
+.banner_section h2{
+    color: #770737;
+    font-weight: 700;
+}
+
+
+/* slider section */
+.slider-wrap img{
+    width: 360px;
+    object-fit: contain;
+}
+
+
+
+@media screen and (max-width : 600px) {
+    .slider-wrap img{
+        width: 480px;
+        object-fit: contain;
+    }
+    }
 
 
 @media screen and (max-width : 600px) {

@@ -1,5 +1,5 @@
 import './login.css';
-import '../components/Navbar/nav-bar';
+import '../components/MtmNavbar/MtmHome';
 
 
 import { useState } from 'react';

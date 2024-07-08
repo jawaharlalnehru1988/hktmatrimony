@@ -1,17 +1,18 @@
 import './App.css';
 import React  from  "react";
-import NavBar from './components/Navbar/nav-bar';
-import HomePage from './pages/Home';
-import Slider from './components/slider/slider-sec';
+import MtmHome from './components/MtmNavbar/MtmHome';
+import { BrowserRouter, Router, Route, Routes } from 'react-router-dom';
 
 
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-       <HomePage />
-       <Slider />
+      <BrowserRouter> 
+        <Routes>
+          <Route path='/'  element={ <MtmHome/>}   />
+        </Routes> 
+       </BrowserRouter> 
     </div>
   );
 }
