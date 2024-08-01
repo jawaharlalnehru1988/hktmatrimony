@@ -7,8 +7,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/Inbox';
 import {SIDE_MENU} from "../config/config";
+import { Link } from 'react-router-dom';
 
-export default function BasicList() {
+const SideBar = ()=> {
   return (
     <Box sx={{ width: '100%', maxWidth: 360, }}>
       <nav aria-label="main mailbox folders">
@@ -16,8 +17,9 @@ export default function BasicList() {
           {
             SIDE_MENU.map(menu=><>
               {
-                menu.visible && <ListItem >
-                <ListItemButton>
+                menu.visible && 
+                <ListItem key={menu.key}>
+                <ListItemButton component={Link} to={`/${menu.key}`}>
                   <ListItemIcon>
                     <InboxIcon />
                   </ListItemIcon>
@@ -33,3 +35,5 @@ export default function BasicList() {
     </Box>
   );
 }
+
+export default SideBar;

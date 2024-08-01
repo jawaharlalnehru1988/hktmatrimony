@@ -1,24 +1,20 @@
-import {
-  BrowserRouter,
-  Routes, Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Base from './Modules/Base';
-import Audios from './components/Audios/Audios';
 import Videos from "./components/Videos/Videos";
+
 
 function App() {
 
 
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Base />}>
-          <Route index element={<Videos />} />
-          <Route path="audios" element={<Audios />} />
+        <Route path="/videos" element={<Videos />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
